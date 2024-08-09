@@ -11,7 +11,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
+      <div className="logo-containers">
       <img src={logo} width={'60'} height={"45"} alt="" />
+      <h4 className='whisper-regular'>Travel Trail</h4>
+      </div>
+      
       <ul className={`navbar-collections ${menuOpen ? 'open' : ''}`} id="mobBar">
         <li className="items">
               <NavLink to="/" className="nav-link text-modify" aria-current="page">Home</NavLink>
