@@ -11,25 +11,25 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <img src={logo} width={'60'} height={"45"} alt="" />
+      <img src={logo} width={'100'} height={"90"} className="p-3" alt="" />
       <ul className={`navbar-collections ${menuOpen ? 'open' : ''}`} id="mobBar">
         <li className="items">
-              <NavLink to="/" className="nav-link text-modify" aria-current="page">Home</NavLink>
+          <NavLink to="/" className="text-modify" aria-current="page">Home</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/about" className="nav-link text-modify">About</NavLink>
+           <NavLink to="/about" className="text-modify">About</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/destination" className="nav-link text-modify">Destination</NavLink>    
+           <NavLink to="/destination" className="text-modify">Destination</NavLink>    
         </li>
         <li className="items">
-           <NavLink to="/contact" className="nav-link text-modify">Contact</NavLink>
+           <NavLink to="/contact" className="text-modify">Contact</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/ai" className="nav-link text-modify">AI</NavLink>
+           <NavLink to="/ai" className="text-modify">AI</NavLink>
         </li>
         <li className="items">
-            <NavLink to="/login" className="nav-link text-modify">Login</NavLink>
+            <NavLink to="/login" className="text-modify">Login</NavLink>
         </li>
         <li className='items'>
         <svg
@@ -66,7 +66,8 @@ const Navbar = () => {
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
         />
       </svg>
-     </div>
+      </div>
+      <div> </div>
     </div>
   );
 };
