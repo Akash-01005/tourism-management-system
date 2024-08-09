@@ -18,22 +18,22 @@ const Navbar = () => {
       
       <ul className={`navbar-collections ${menuOpen ? 'open' : ''}`} id="mobBar">
         <li className="items">
-              <NavLink to="/" className="nav-link text-modify" aria-current="page">Home</NavLink>
+              <NavLink to="/" className="text-modify text-white" aria-current="page">Home</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/about" className="nav-link text-modify">About</NavLink>
+           <NavLink to="/about" className="text-modify text-white">About</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/destination" className="nav-link text-modify">Destination</NavLink>    
+           <NavLink to="/destination" className="text-modify text-white">Destination</NavLink>    
         </li>
         <li className="items">
-           <NavLink to="/contact" className="nav-link text-modify">Contact</NavLink>
+           <NavLink to="/contact" className="text-white text-modify">Contact</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/ai" className="nav-link text-modify">AI</NavLink>
+           <NavLink to="/ai" className="text-white text-modify">AI</NavLink>
         </li>
         <li className="items">
-            <NavLink to="/login" className="nav-link text-modify">Login</NavLink>
+            <NavLink to="/login" className="text-white text-modify">Login</NavLink>
         </li>
         <li className='items'>
         <svg
