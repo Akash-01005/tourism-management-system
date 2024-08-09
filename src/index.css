@@ -544,10 +544,23 @@ body {
     color: #999999;
     width: 40%;
     padding: 50px;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+  
+.content{
+    background-image: url('./assets/back2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 89.59vh;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
 
-
+.content h1{
+    font-family: sans-serif;
+}

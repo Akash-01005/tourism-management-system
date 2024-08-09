@@ -68,7 +68,7 @@ function Destination() {
   const filteredDestinations = filterDestinations();
 
   return (
-    <div className="destinations mt-1">
+    <div className="destinations">
       <h2 className='text-white'>Destinations</h2>
       <div className="search-filters">
         <input
@@ -114,7 +114,7 @@ function Destination() {
             filteredDestinations.map((destination, index) => (
               <div
                 key={index}
-                className="destination-item col-lg-3 col-sm-12 col-md-4"
+                className="destination-item col-lg-4 col-xl-3 col-sm-12 col-md-4"
                 data-region={destination.region}
                 data-rating={destination.rating}
                 data-type={destination.type}
