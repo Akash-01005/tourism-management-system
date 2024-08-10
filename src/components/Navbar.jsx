@@ -11,26 +11,27 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <img src={logo} width={'100'} height={"90"} className="p-3" alt="" />
+      <div className="logo-containers">
+      <img src={logo} width={'100'} height={"65"} alt="" />
+      </div>
       <ul className={`navbar-collections ${menuOpen ? 'open' : ''}`} id="mobBar">
         <li className="items">
           <NavLink to="/" className="text-modify" aria-current="page">Home</NavLink>
         </li>
         <li className="items">
-           <NavLink to="/about" className="text-modify">About</NavLink>
-        </li>
-        <li className="items">
            <NavLink to="/destination" className="text-modify">Destination</NavLink>    
         </li>
         <li className="items">
-           <NavLink to="/contact" className="text-modify">Contact</NavLink>
+           <NavLink to="/hotels" className="text-modify">Hotels</NavLink>    
         </li>
         <li className="items">
            <NavLink to="/ai" className="text-modify">AI</NavLink>
         </li>
         <li className="items">
-            <NavLink to="/login" className="text-modify">Login</NavLink>
+           <NavLink to="/about" className="text-modify">About</NavLink>
         </li>
+        
+
         <li className='items'>
         <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +68,12 @@ const Navbar = () => {
         />
       </svg>
       </div>
-      <div> </div>
+      <div>
+        <NavLink to="/login" className="text-modify pr-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle login-icon" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg></NavLink>
+      </div>
     </div>
   );
 };
