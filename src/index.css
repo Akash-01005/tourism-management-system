@@ -52,19 +52,18 @@ body {
     padding: 12px 24px;
     font-size: 16px;
     outline: none;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background-color: transparent;
     border-radius: 50px;
     cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: transparent;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .start-btn:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #030303;
     outline: none;
-    border-width: 0px;
     transform: scale(1.05);
 }
 
@@ -119,7 +118,7 @@ body {
     margin-top: 20px;
     padding: 10px;
     font-size: 16px;
-    border-radius: 20px !important;
+    border-radius: 8px !important;
     border: 1px solid #cccccc;
     width: 50%;
     outline: none;
@@ -452,7 +451,7 @@ body {
 .input-group input {
     padding: 14px;
     border: 1px solid #ccc;
-    border-radius: 45px;
+    border-radius: 8px;
 }
 
 .sign-in-btn {
@@ -840,4 +839,70 @@ body {
 
 hr{
     background-color:rgb(130, 128, 128)
+}
+
+.explore-bg{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.input-place{
+    width: 350px;
+    border-radius: 8px;
+}
+
+.input-date{
+    border-radius: 8px;
+    border-width: 0px;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+}
+
+.input-date:hover {
+    outline: none;
+}
+
+.plan-inputs {
+    margin-bottom: 30px;
+}
+
+.explore-bg{
+    background-image: url('../src/assets/night.jpg');
+    background-size: cover;
+    height: fit-content;
+    color: #ffffff;
+}
+
+.bg-padding{
+    padding-top: 80px;
+}
+
+.preference-section{
+    margin-left: 200px;
+}
+
+.checkbox{
+    height: 15px;
+    width: 15px
+}
+
+.submit-btn {
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    color: #ffffff;
+    background-color: #22a23a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #255e2f;
+    outline: none;
+    color: #ffffff
 }
